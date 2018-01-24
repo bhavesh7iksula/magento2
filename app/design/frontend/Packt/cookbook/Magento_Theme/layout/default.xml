@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+    
+
+     <!--To add custom logo-->
+     <referenceContainer name="header.container">
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                <argument name="logo_img_width" xsi:type="number">100</argument>
+                <argument name="logo_img_height" xsi:type="number">38</argument>
+            </arguments>
+        </referenceBlock>
+        
+        	<referenceBlock name="header.container">
+            <block class="Magento\Framework\View\Element\Template" name="custom_header" before="-" template="Magento_Theme::html/custhead.phtml"></block>
+            </referenceBlock>
+            </referenceContainer>
+        </body>
+   </page>
+    
