@@ -14,9 +14,14 @@
         </referenceBlock>
         
         	<referenceBlock name="header.container">
-            <block class="Magento\Framework\View\Element\Template" name="custom_header" before="-" template="Magento_Theme::html/custhead.phtml"></block>
+            <block class="Magento\Framework\View\Element\Template" name="custom_header" after="logo" template="Magento_Theme::html/custhead.phtml">
+            	<argument name="css_class" xsi:type="string">header links11</argument>
+            </block>
             </referenceBlock>
             </referenceContainer>
+            <referenceContainer name="footer">
+            <block class="Magento\Framework\View\Element\Template" name="company_module" template="Magento_Theme::tracking.phtml" />
+        </referenceContainer>
         </body>
    </page>
     
