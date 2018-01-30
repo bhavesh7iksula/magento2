@@ -18,9 +18,14 @@
             	<argument name="css_class" xsi:type="string">header links11</argument>
             </block>
             </referenceBlock>
+
+
             </referenceContainer>
-            <referenceContainer name="footer">
-            <block class="Magento\Framework\View\Element\Template" name="company_module" template="Magento_Theme::tracking.phtml" />
+            <referenceContainer name="footer" htmlClass="tracking-class">
+            <block class="Magento\Framework\View\Element\Template" name="company_module" template="Magento_Theme::html/tracking.phtml" />
+            <arguments>
+        	<argument name="css_class" xsi:type="string">my-class</argument>
+    		</arguments>
         </referenceContainer>
         </body>
    </page>
